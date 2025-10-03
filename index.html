@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Single Page Scroll</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth; /* enables smooth scrolling */
+    }
+    section {
+      height: 100vh; /* full page height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+    #home { background: lightblue; }
+    #about { background: lightcoral; }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First Section -->
+  <section id="home">
+    <div>
+      <p>Welcome to Home Section</p>
+      <a href="#about"><button>Go to About</button></a>
+    </div>
+  </section>
+
+  <!-- Second Section -->
+  <section id="about">
+    <div>
+      <p>This is the About Section</p>
+      <a href="#home"><button>Back to Home</button></a>
+    </div>
+  </section>
+
+</body>
+</html>
